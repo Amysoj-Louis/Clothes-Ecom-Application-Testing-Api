@@ -1,6 +1,6 @@
 # Clothes Ecom Application Testing Api #
 
-Hi, this is a flask Api which outputs json dataset of data scraped from amazon. It has image url and price. It can be used in applications which doesn't use brand names for sales and only price and image matters. 
+Hi, this is a flask Api which outputs json dataset of data scraped from Aamazon](https://www.amazon.in/). It has image url and price. It can be used in applications which doesn't use brand names for sales and only price and image matters. 
 
 Note: 
 - I don't have the copyright of the images thus please don't use in production code.
