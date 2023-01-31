@@ -1,6 +1,6 @@
 # Clothes Ecom Application Testing Api
 
-This is a Flask REST API that serves the data in a JSON file. The data is about Women's Sarees and their prices and URLs.
+This is a Flask REST API that serves the data in a JSON file. The data is about Amazon Products and their prices and URLs.
 
 ## Features
 
