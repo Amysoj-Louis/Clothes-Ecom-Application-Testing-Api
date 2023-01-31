@@ -1,11 +1,33 @@
-# Clothes Ecom Application Testing Api #
+# Clothes Ecom Application Testing Api
 
-Hi, this is a flask Api which outputs json dataset of data scraped from [Amazon](https://www.amazon.in/). It has image url and price. It can be used in applications which doesn't use brand names for sales and only price and image matters. 
+This is a Flask REST API that serves the data in a JSON file. The data is about Women's Sarees and their prices and URLs.
 
-Note: 
-- I don't have the copyright of the images thus please don't use in production code.
-- I haven't added the CORS support for websites. If you wish to add CORS refer to this docs of [flask_cors](https://flask-cors.readthedocs.io/en/latest/)
+## Features
 
-- The category names are Case sensitive
+- The API allows GET requests and returns data in JSON format.
+- The API allows fetching data for a specific category by passing the category name in the URL query string.
+- If the category name is not specified or incorrect, the API returns an error message.
+- If the category name is specified and correct, the API returns the data for that category.
 
-Hope you have a good day, Happy Coding :)
+## Prerequisites
+
+- Flask library should be installed.
+- The data.json file should be available in the same directory as the code.
+
+## Usage
+
+- The code can be run using python filename.py.
+- The API will be accessible at http://localhost:5000/.
+  The category data can be fetched by passing the category name in the URL query string, e.g., http://localhost:5000/?category=Women's Sarees.
+
+## Code Walkthrough
+
+- Import the necessary libraries.
+- Initialize Flask application.
+  Define the API endpoint for the GET request.
+- In the API endpoint, get the category name from the URL query string.
+- Open the data.json file and load the data into a Python dictionary.
+- If the category name is not None or empty, try to return the data for that category.
+- If the category name is incorrect, return an error message.
+- If the category name is None or empty, return all the data.
+- The main function runs the Flask application in debug mode.
